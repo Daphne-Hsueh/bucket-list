@@ -40,6 +40,7 @@ const SingleTask = ({
 
   const handleDelete = (id: number) => {
     setTasks(tasks.filter((task) => task.id !== id));
+    setCompletedTasks(tasks.filter((task) => task.id !== id));
   };
 
   const handleDone = (id: number) => {
